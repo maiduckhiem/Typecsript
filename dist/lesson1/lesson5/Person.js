@@ -11,24 +11,44 @@
 //     this.name = name;
 //   }
 // }
-// class Emloyee extends Person {
-//   private salary: number;
-//   public Emloyee(id: number, name: string, salary: number) {
-//     super(id,n)
-//     this.name = name;
-//     this.salary = salary;
-//   }
-//   public getSalary() {
-//     return this.salary;
-//   }
-//   public setSalary(salary: number) {
-//     this.salary = salary;
-//   }
-//   public toString(){
-//       return `${this.getId()} - ${this.name} - ${this.salary}`
-//   }
+// abstract class Person implements workable{
+//     private readonly id:number;
+//     protected name: string;
+//     public constructor(id:number,name:string){
+//         this.name=name;
+//         this.id=id;
+//     }
+//     public getName(){
+//         return this.name
+//     }
+//     public setName(name:string){
+//         this.name = name;
+//     }
+//     public getId(){
+//         return this.id;
+//     }
+//     public toString():string {
+//         return `$(this.id) - $(this.name)`;
+//     }
 // }
-// let e: Emloyee = new Emloyee(1, "Chao ban" , 0);
+// // class Emloyee extends Person {
+// //   private salary: number;
+// //   public Emloyee(id: number, name: string, salary: number) {
+// //     super(id,n)
+// //     this.name = name;
+// //     this.salary = salary;
+// //   }
+// //   public getSalary() {
+// //     return this.salary;
+// //   }
+// //   public setSalary(salary: number) {
+// //     this.salary = salary;
+// //   }
+// //   public toString(){
+// //       return `${this.getId()} - ${this.name} - ${this.salary}`
+// //   }
+// // }
+// // let e: Emloyee = new Emloyee(1, "Chao ban" , 0);
 // // let p: Person = new Person("choaDDD");
 // // console.log(p.name);
 // // p.setName("chaonn");

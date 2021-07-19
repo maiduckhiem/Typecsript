@@ -1,66 +1,66 @@
-class Person {
-  public name: string;
+// class Person {
+//   public name: string;
 
-  constructor(name: string) {
-    this.name = name;
-  }
-  getName() {
-    return this.name;
-  }
-  setName(name: string) {
-    this.name = name;
-  }
-}
-abstract class Person implements workable{
-    private readonly id:number;
-    protected name: string;
-
-    public constructor(id:number,name:string){
-        this.name=name;
-        this.id=id;
-    }
-    public getName(){
-        return this.name
-    }
-
-    public setName(name:string){
-        this.name = name;
-    }
-    public getId(){
-        return this.id;
-    }
-
-    public toString():string {
-        return `$(this.id) - $(this.name)`;
-    }
-}
-
-
-// class Emloyee extends Person {
-//   private salary: number;
-
-//   public Emloyee(id: number, name: string, salary: number) {
-//     super(id,n)
+//   constructor(name: string) {
 //     this.name = name;
-//     this.salary = salary;
 //   }
-//   public getSalary() {
-//     return this.salary;
+//   getName() {
+//     return this.name;
 //   }
-//   public setSalary(salary: number) {
-//     this.salary = salary;
-//   }
-//   public toString(){
-//       return `${this.getId()} - ${this.name} - ${this.salary}`
+//   setName(name: string) {
+//     this.name = name;
 //   }
 // }
-// let e: Emloyee = new Emloyee(1, "Chao ban" , 0);
-// let p: Person = new Person("choaDDD");
-// console.log(p.name);
-// p.setName("chaonn");
-// console.log(p.getName());
+// abstract class Person implements workable{
+//     private readonly id:number;
+//     protected name: string;
+
+//     public constructor(id:number,name:string){
+//         this.name=name;
+//         this.id=id;
+//     }
+//     public getName(){
+//         return this.name
+//     }
+
+//     public setName(name:string){
+//         this.name = name;
+//     }
+//     public getId(){
+//         return this.id;
+//     }
+
+//     public toString():string {
+//         return `$(this.id) - $(this.name)`;
+//     }
+// }
 
 
-// public được phép truy xuất tất cả mọi nơi
-// protected chỉ được truy xuất trong class đó hoặc trong các lớp con
-// private chỉ được truy xuất trong class đó 
+// // class Emloyee extends Person {
+// //   private salary: number;
+
+// //   public Emloyee(id: number, name: string, salary: number) {
+// //     super(id,n)
+// //     this.name = name;
+// //     this.salary = salary;
+// //   }
+// //   public getSalary() {
+// //     return this.salary;
+// //   }
+// //   public setSalary(salary: number) {
+// //     this.salary = salary;
+// //   }
+// //   public toString(){
+// //       return `${this.getId()} - ${this.name} - ${this.salary}`
+// //   }
+// // }
+// // let e: Emloyee = new Emloyee(1, "Chao ban" , 0);
+// // let p: Person = new Person("choaDDD");
+// // console.log(p.name);
+// // p.setName("chaonn");
+// // console.log(p.getName());
+
+
+// // public được phép truy xuất tất cả mọi nơi
+// // protected chỉ được truy xuất trong class đó hoặc trong các lớp con
+// // private chỉ được truy xuất trong class đó 

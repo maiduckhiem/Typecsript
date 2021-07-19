@@ -1,16 +1,19 @@
 class poHn {
-    private static cosoHN: poHn;
-    //shorthand initalizer
-    public constructor(private readonly address: string){
-        this.address =address;
+  private static cosoHN: poHn;
+  //shorthand initalizer
+  public constructor(private readonly address: string) {
+    this.address = address;
+  }
+
+  // hàm khởi tạo
+  public static getcoso(): poHn {
+    if (poHn.cosoHN == null) {
+      poHn.cosoHN = new poHn("tvb");
     }
-    public static getcoso():poHn{
-        if(poHn.cosoHN == null){
-            poHn.cosoHN = new poHn('tvb')
-        }
-        return poHn.cosoHN;
-    }
+    return poHn.cosoHN;
+  }
 }
 let p1: poHn = poHn.getcoso();
 // let p1: poHn = new poHn('tvb');
 // let p2: poHn = new poHn('dia nguc');
+// console.log(p1.address);
