@@ -1,0 +1,14 @@
+luyện tập :
+
+- tạo kiểu dữ liệu thongtincoban gồm các thuộc tính:
+- hoten: string,
+-ngaysinh:Date,
+-diachi: string
+
+- tạo kiểu dữ liệu sdt với thuộc tính:
+- sdt: string 
+
+- tạo kiểu dữ liệu email với thuộc tính:
+email:string
+
+-tạo kiểu giao (intersection type) user  = thontincoban  & sdt & email
