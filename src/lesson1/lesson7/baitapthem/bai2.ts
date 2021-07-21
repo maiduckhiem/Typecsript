@@ -1,21 +1,29 @@
-type thongtincoban ={
-    hoten: String,
-    ngaysinh: Date,
-    diachi:String
+type thongtincoban = {
+  ngaysinh: Date;
+  diachi: String;
+};
+
+type hoten ={
+    ho: String,
+    dem:String,
+    ten: String
 }
 
 type sdt = {
-     sdt: String
-}
+  sdt: String;
+};
 
 type email = {
-    email: String
-}
+  email: String;
+};
+type user = thongtincoban & sdt & email&hoten;
 
-type user = thongtincoban & {
-    hoten: string,
-    ngaysinh: Date,
-    diachi: String,
-    sdt: String,
-    email: String
-}
+let user1: user = {
+  ho: "mai",
+  dem: "duc",
+  ten: "khiem",
+  ngaysinh: new Date(),
+  diachi: 'HN',
+  sdt:'09423424',
+  email:'duckhiem110@gmail.com'
+};
