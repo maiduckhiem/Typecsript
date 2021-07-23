@@ -1,3 +1,4 @@
+//union type
 type Combinable = string | number;
 type Numeric = number | boolean;
 
